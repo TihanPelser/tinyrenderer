@@ -44,7 +44,7 @@ void multidirectional_line(int ax, int ay, int bx, int by, TGAImage &framebuffer
     }
 }
 
-// A simple, error progagating, implementation of Bresenham's Line Drawing Algorithm
+// A simple, error propagating, implementation of Bresenham's Line Drawing Algorithm
 void multidirectional_line(int ax, int ay, int bx, int by, TGAImage &framebuffer, TGAColor color) {
     // Account for lines that are steep, i.e. where the dy >> dx by transposing the image
     bool steep = std::abs(ax-bx) < std::abs(ay - by);
